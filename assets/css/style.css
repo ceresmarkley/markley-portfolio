@@ -18,10 +18,12 @@ body {
 }
 /* sets top header background color, font, padding and color of text */
 header {
+    display:flex;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    justify-content: center;
 }
 /* sets the h1 header 'Hori' and 'n' display and font size*/
 header h1 {
@@ -70,11 +72,22 @@ h2 {
 }
 
 article {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    border: 10px;
     border-bottom: solid 5px;
     border-color: var(--bg-color-2);
     padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+article a {
+    border: solid 10px;
+    border-color: var(--bg-color-2)
+}
+article a:hover {
+    border: solid 10px;
+    border-color: var(--accent-color)
 }

@@ -14,20 +14,21 @@
 }
 /* sets the background color of the entire body of html webpage to #d9dcd6 */
 body {
-    background-color: #d9dcd6;
+    background-color: var(--bg-color);
 }
 /* sets top header background color, font, padding and color of text */
 header {
     display:flex;
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     background-color: var(--bg-color);
     color: var(--text-color);
     justify-content: center;
 }
 /* sets the h1 header 'Hori' and 'n' display and font size*/
-header h1 {
-    display: inline-block;
+h1 {
+    display: flex;
+    padding-right: 500px;
     font-size: 200%;
 
 }
@@ -36,7 +37,7 @@ nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-family);
     font-size: 20px;
 }
 /* styles header list items from vertically stacking list to side by side "left to right" reading perspective */
@@ -72,8 +73,6 @@ h2 {
 }
 
 article {
-    display: flex;
-    flex-wrap: wrap;
     line-height: 1.5;
     border: 10px;
     border-bottom: solid 5px;
@@ -83,11 +82,26 @@ article {
     color: var(--text-color);
 }
 
-article a {
+.webpage {
+    display:  inline-block;
+    padding-left: 20px;
+    padding-right: 20px;;
+}
+.webpage a {
+    display:flex;
+    justify-content: center;
+}
+.webpage img {
     border: solid 10px;
     border-color: var(--bg-color-2)
 }
-article a:hover {
-    border: solid 10px;
+.webpage img:hover {
+    border: double 10px;
     border-color: var(--accent-color)
 }
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+  }

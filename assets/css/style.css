@@ -69,7 +69,7 @@ article {
     border: 10px;
     border-bottom: solid 5px;
     border-color: var(--bg-color-2);
-    padding: 50px;
+    padding: 25px;
     color: var(--text-color);
 }
 
@@ -87,6 +87,7 @@ article {
     display:flex;
     justify-content: center;
 }
+
 .webpage img {
     border: solid 10px;
     border-color: var(--bg-color-2)
@@ -94,11 +95,30 @@ article {
 .webpage img:hover {
     border: double 15px;
     border-color: var(--accent-color)
+    
+}
+
+
+
+/*  */
+#contact-me ul li {
+    display: inline-block;
+
+    padding-right:240px;
+    padding-left:35px;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+#contact-me ul li a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
     body {
-        display:flex;
+        display:inline-block;
     }
     header {
         height: 10%;

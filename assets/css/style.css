@@ -1,4 +1,4 @@
-/* sets global style of html webpage, specifically the box sizing, paddings and margin to border-box and '0' */
+/* */
 :root {
     --font-family: 'Montserrat', sans-serif;
     --bg-color: #B2A4FF;
@@ -12,11 +12,11 @@
     padding: 0;
     margin: 0;
 }
-/* sets the background color of the entire body of html webpage to #d9dcd6 */
+/* */
 body {
     background-color: var(--bg-color);
 }
-/* sets top header background color, font, padding and color of text */
+/*  */
 header {
     display:flex;
     padding: 20px;
@@ -25,14 +25,18 @@ header {
     color: var(--text-color);
     justify-content: center;
 }
-/* sets the h1 header 'Hori' and 'n' display and font size*/
+/* */
 h1 {
     display: flex;
     padding-right: 500px;
     font-size: 200%;
 
 }
-/* styles our 3 html buttons in our header to have padding & margins. Sets for content to appear on right side of webpage with a different font then h1 text */
+
+h2 {
+    font-size: 235%;
+}
+/*  */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -40,36 +44,27 @@ nav {
     font-family: var(--font-family);
     font-size: 20px;
 }
-/* styles header list items from vertically stacking list to side by side "left to right" reading perspective */
+/*  */
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-/* sets <a> link elements in header section color to white and no text-decor. Without this code buttons would appear purple with underline.*/
+/* */
 nav a {
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--secondary);
+    color: var(--text-color);
     margin-right: 10px;
-    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
     font-size: 1.4rem;
-  }
-/* sets the font size of our body text to 16px */
+}
+/* */
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 div {
     padding: 20px;
     background-color: var(--bg-color-2);
 
-}
-
-h2 {
-    font-size: 225%;
 }
 
 article {
@@ -96,12 +91,38 @@ article {
     border-color: var(--bg-color-2)
 }
 .webpage img:hover {
-    border: double 10px;
+    
+    border: double 12px;
     border-color: var(--accent-color)
 }
 
+#wp1 {
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
+    body {
+        display:flex;
     }
+    header {
+        height: 10%;
+        justify-content: center;
+    }
+    nav {
+        
+    }
+    nav a{
+       
+    }
+    nav ul li {
+        display: flex;
+    }
+    main .webpage {
+        flex-wrap: wrap;
+    }
+
+    #wp1 header {
+        width:270px;
+    }
+    
   }

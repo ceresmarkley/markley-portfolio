@@ -78,6 +78,10 @@ article {
     color: var(--text-color);
 }
 
+#work {
+    display: flex;
+    flex-wrap: wrap;
+}
 .webpage {
     display:  flex;
     flex-direction: column;

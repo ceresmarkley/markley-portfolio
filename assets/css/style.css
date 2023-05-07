@@ -22,37 +22,35 @@ header {
     padding: 20px;
     font-family: var(--font-family);
     color: var(--text-color);
-    justify-content: center;
+    justify-content: space-between;
 }
 /* */
 h1 {
     display: flex;
     padding-right: 500px;
     font-size: 200%;
-
 }
 
 h2 {
-    font-size: 235%;
+    font-size: 225%;
+    text-decoration: underline;
 }
 h3 {
-    display:flex;
-    padding: 20px;
+    align-items: center;
+    padding: 0px;
     font-family: var(--font-family);
     color: var(--text-color);
-    justify-content: center;
 }
 /*  */
 nav {
     padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+    justify-content: flex-end;
     font-family: var(--font-family);
     font-size: 20px;
 }
 /*  */
 nav ul li {
-    display: inline-block;
+    display:inline-block;
     margin-left: 25px;
 }
 /* */
@@ -81,18 +79,17 @@ article {
 }
 
 .webpage {
-    display:  inline-block;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 20px;
     padding-right: 20px;;
 }
 
-.webpage header {
-    font-size: 18px;
-    padding: 10px;
-}
 .webpage a {
     display:flex;
     justify-content: center;
+    margin: 5px;
 }
 
 .webpage img {
@@ -105,17 +102,15 @@ article {
     
 }
 
-
-
-/*  */
-#contact-me ul li {
-    display: inline-block;
-
-    padding-right:240px;
-    padding-left:35px;
+#contact-me ul {
+    padding-top: 15px;;
+    display: flex;
+    justify-content: space-evenly;
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: 24px;
+
 }
+
 
 #contact-me ul li a {
     text-decoration: none;
@@ -123,25 +118,35 @@ article {
     color: var(--text-color);
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1521px) {
     body {
         display: flex;
         flex-direction: column;
     }
     h1 {
-        font-size: 250%;
         align-items: center;
-        padding-right:400px;
+        justify-content: center;
     }
-    nav {
-        width: 20%;
-        padding-top: 0px;
-        margin: 0;
-    }
+
     nav ul li a{
+        display:flex;
         text-decoration: underline;
      }
 }
+
+@media screen and (max-width: 1043px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        display:flex;
+
+    
+    }
+   
+}
+
+
 @media screen and (max-width: 768px) {
     * {
         box-sizing: border-box;
@@ -165,10 +170,9 @@ article {
     
     header {
         justify-content: space-between;
-        padding: 10px;
+        
     }
     h1 {
-        width:100px;
         padding-right:10%;
 
     }

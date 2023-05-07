@@ -35,6 +35,13 @@ h1 {
 h2 {
     font-size: 235%;
 }
+h3 {
+    display:flex;
+    padding: 20px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    justify-content: center;
+}
 /*  */
 nav {
     padding-top: 15px;
@@ -116,23 +123,60 @@ article {
     color: var(--text-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1030px) {
     body {
-        display:inline-block;
-    }
-    header {
-        height: 10%;
-        justify-content: center;
-    }
-    nav ul li {
         display: flex;
+        flex-direction: column;
     }
-    main .webpage {
-        flex-wrap: wrap;
+    h1 {
+        font-size: 250%;
+        align-items: center;
+        padding-right:400px;
     }
+    nav {
+        width: 20%;
+        padding-top: 0px;
+        margin: 0;
+    }
+    nav ul li a{
+        text-decoration: underline;
+     }
+}
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        display:flex;
+        flex-direction: column;
 
-    #wp1 header {
-        width:270px;
+    
+    }
+    nav {
+        justify-content: flex-end;
+        width: 60%;
+        padding-top: 0px;
+        padding-left:230px;
+        margin: 0;
+    }
+    nav ul li a{
+       text-decoration: underline;
     }
     
-  }
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+    h1 {
+        width:100px;
+        padding-right:10%;
+
+    }
+    h3 {
+        justify-content: flex-start;
+
+    }
+    main {
+        flex: 1;
+    }
+}

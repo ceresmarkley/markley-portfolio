@@ -81,7 +81,7 @@ article {
     border: 10px;
     border-bottom: solid 5px;
     border-color: var(--bg-color-2);
-    padding: 25px;
+    padding: 20px;
     color: var(--text-color);
 }
 
@@ -113,20 +113,16 @@ article {
     
 }
 
+#contact-me {
+    display:  flex; 
+    justify-content: space-between;
+} 
 
-#contact-me ul {
-    padding-top: 15px;;
+#contact-me a {
+    padding-top: 15px;
     margin: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
     font-family: var(--font-family);
     font-size: 24px;
-
-}
-
-#contact-me ul li a {
     text-decoration: none;
     font-family: var(--font-family);
     color: var(--text-color);
@@ -136,16 +132,21 @@ a:hover {
     cursor: pointer;
     background-color: var(--bg-color-2);
     transform: scale(1.1);
-    box-shadow: 0 0 10px 0 var(--bg-color-2);
+    box-shadow: 0 0 10px 0 var(--bg-color);
     transition: 1s;
 }
 
-@media screen and ( max-width: 1041px) {
-    nav ul li {
-        text-decoration: underline;
-        color: var(--accent-color);
-    }
+footer {
+    padding: 15px;
+    display: flex;
+    font-size: 125%;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    justify-content: center;
 }
+
+/* begin media screen size section below */
+
 
 @media screen and ( max-width: 1128px) {
     #work  {
@@ -158,24 +159,30 @@ a:hover {
 
 }
 
-@media screen and ( max-width: 500px) {
+@media screen and ( max-width: 1041px) {
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        text-decoration: underline;
+        color: var(--accent-color);
+    }
+}
+
+@media screen and ( max-width: 680px) {
    
-    #contact-me ul {
+    #contact-me  {
         flex-direction: column;
     }
 
-    #contact-me ul li {
+    #contact-me a {
+        display:flex;
+        justify-content: center;
         padding-top:10px;
     }
 }
 
-@media screen and ( max-width: 436px) {
-
-    h1{
-        width:50%;
-    }
-    nav {
-        width:50%;
-        margin-left: 50px;
-    }
-}

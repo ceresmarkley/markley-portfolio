@@ -35,7 +35,6 @@ h1 {
     display: flex;
     align-items: center;
     font-size: 200%;
-    padding-right: 150px;
 }
 
 h2 {
@@ -165,9 +164,13 @@ a:hover {
     }
 }
 
-@media screen and ( max-width: 445px) {
-    nav ul li {
-        list-style-type: disc;
-        color: var(--accent-color);
+@media screen and ( max-width: 436px) {
+
+    h1{
+        width:50%;
+    }
+    nav {
+        width:50%;
+        margin-left: 50px;
     }
 }

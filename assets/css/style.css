@@ -1,4 +1,4 @@
-/* */
+/* establishes the root color tones used throughout webpage as well as font-family*/
 :root {
     --font-family: 'Montserrat', sans-serif;
     --bg-color: #B2A4FF;
@@ -7,18 +7,22 @@
     --text-color: #FDF7C3;
 }
 
+/* Sets the global box-sizing, padding and margin values*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-/* */
+
+/* sets the body of webpage to flex column display and establishes the webpages background color pulling a root variable */
 body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
 }
-/*  */
+
+/* sets flex display in header with padding and height alterations. font-family, color used are from root variables. content is separated by space-between to opposite sides of header section.
+using align-items:flex-end to have content displayed along bottom of header section */
 header {
     display:flex;
     padding-top: 20px;
@@ -30,37 +34,41 @@ header {
     justify-content: space-between;
     align-items: flex-end;
 }
-/* */
+
+/* sets <h1> Ceres Markley Cook to flex display and increases font size */
 h1 {
     display: flex;
-    align-items: center;
     font-size: 200%;
 }
 
+/* sets article <h2> font-size, text decoration and color. color drawn from root variable*/
 h2 {
     font-size: 225%;
     text-decoration: underline;
     text-decoration-color: var(--accent-color);;
 }
+
+/* sets the font family and color from variable root*/
 h3 {
-    align-items: center;
-    padding: 0px;
     font-family: var(--font-family);
     color: var(--text-color);
 }
-/*  */
+
+/* sets nav bar in header section display to flex row, also setting font size and using root variable for font family */
 nav {
     display: flex;
     flex-direction: row;
     font-family: var(--font-family);
     font-size: 20px;
 }
-/*  */
+
+/* sets ul li display to inline flex flex-end. this allows the list to appear outside of column form stretched along bottom of nav bar within header */
 nav ul li {
     display: inline-flex;
     justify-content: flex-end;
 }
-/* */
+
+/* sets nav bar button text-decor, padding, color, margin and font size. color pulling from root variable*/
 nav a {
     text-decoration: none;
     padding: 5px 10px;
@@ -68,14 +76,18 @@ nav a {
     margin-right: 10px;
     font-size: 1.4rem;
 }
-/* */
+
+/* sets the p font size for webpage to 18px */
 p {
     font-size: 18px;
 }
+
+/* puts a background color to fill in webpage matching cover photo for div section. background color pulled from root variable*/
 div {
     background-color: var(--bg-color-2);
 }
 
+/* sets all article line heights, border, and padding. Sets border-color and color using root variable*/
 article {
     line-height: 1.5;
     border: 10px;
@@ -85,10 +97,13 @@ article {
     color: var(--text-color);
 }
 
+/* sets section id #work to flex:wrap display. aligning section into a row within article*/
 #work {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* styles section.webpage to flex column display. this aligns section child elements into columns within their parent with spacing between the columns from flex %  */
 .webpage {
     display:  flex;
     flex-direction: column;
@@ -97,45 +112,43 @@ article {
     flex: 20%;
 }
 
+/* sets section buttons to have a 10px margin */
 .webpage a {
-    display:flex;
-    justify-content: center;
     margin: 10px;
 }
 
+/* gives section.webpage images a solid border of 10px with border color set from root variable */
 .webpage img {
     border: solid 10px;
     border-color: var(--bg-color-2)
 }
-.webpage img:hover {
-    border: double 15px;
-    border-color: var(--accent-color)
-    
-}
 
+/* sets article#contact-me to flex display with space between, separating its <h2> and button section into a row within article. */
 #contact-me {
     display:  flex; 
     justify-content: space-between;
+    margin-right: 200px;
 } 
 
+/* sets section#contact-me buttons, margin, padding, font size and text decor. it also uses root variables to set font family, and color */
 #contact-me a {
-    padding-top: 15px;
-    margin: 5px;
-    font-family: var(--font-family);
+    padding: 10px;
+    margin-top: 15px;
     font-size: 24px;
     text-decoration: none;
     font-family: var(--font-family);
     color: var(--text-color);
 }
 
+/* styles buttons when user hovers to change cursor to pointer img and sets transform to scale and transition time to 1s. */
 a:hover {
     cursor: pointer;
-    background-color: var(--bg-color-2);
     transform: scale(1.1);
-    box-shadow: 0 0 10px 0 var(--bg-color);
+    background-color: var(--bg-color-2);
     transition: 1s;
 }
 
+/* sets footer to flex center display with font size and padding styling. font family and color pulled from root */
 footer {
     padding: 15px;
     display: flex;
@@ -145,20 +158,18 @@ footer {
     justify-content: center;
 }
 
-/* begin media screen size section below */
-
-
+/* begin media screen size section below listed from larger screens to small*/
+/* as screen size shrinks to 1128 or smaller section#work will be styled from a row to single column down the page */
 @media screen and ( max-width: 1128px) {
     #work  {
         flex-direction: column;
     }
 
-    section#wp1.webpage img {
-        flex-shrink: 2;
-    }
-
 }
 
+/* # as screen size shrinks to 1041 or small the nav ul li section are styled as to keep them on the right side of header. 
+# added text decor to ul li items to this size as nav buttons begin stacking onto each other
+# section#contact-me is also styled into colums centered in the page*/
 @media screen and ( max-width: 1041px) {
 
     nav ul {
@@ -171,12 +182,10 @@ footer {
         text-decoration: underline;
         color: var(--accent-color);
     }
-}
 
-@media screen and ( max-width: 680px) {
-   
     #contact-me  {
         flex-direction: column;
+        margin-right: 0px;
     }
 
     #contact-me a {
@@ -185,4 +194,5 @@ footer {
         padding-top:10px;
     }
 }
+
 

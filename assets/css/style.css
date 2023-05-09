@@ -41,8 +41,8 @@ h1 {
     font-size: 200%;
 }
 
-/* sets article <h2> font-size, text decoration and color. color drawn from root variable*/
-h2 {
+/* sets article <h2> & <h4> font-size, text decoration and color. color drawn from root variable*/
+h2, h4 {
     font-size: 225%;
     text-decoration: underline;
     text-decoration-color: var(--accent-color);;
@@ -121,6 +121,12 @@ article {
 .webpage img {
     border: solid 10px;
     border-color: var(--bg-color-2)
+}
+
+/* increased size of first image within 'my work' article to be larger than those after it.*/
+section#wp1.webpage a img {
+    width: 350px;
+    height: 350px;
 }
 
 /* sets article#contact-me to flex display with space between, separating its <h2> and button section into a row within article. */

@@ -11,3 +11,5 @@
 # css uses :root element settings that are then called throughout css page
 
 ![portfolio1](https://user-images.githubusercontent.com/129554518/236910568-51bb3a33-1004-4080-a970-0812093d6b2b.PNG)
+
+#sources: I created the code referencing previous work from my bootcamp course as well as class' activities. 

@@ -1,15 +1,16 @@
 # markley-portfolio
 
-# personal portfolio challenge with advanced CSS style techniques learned in week 2 of bootcamp. Particularly flexbox, variable, and button:hover/::after functions
+## Table of Contents 
 
-# https://ceresmarkley.github.io/markley-portfolio/ - link to live deployed URL
+* [Resume](#resume)
+* [Description](#description)
+* [Webpage Image](#webpage-image)
+* [Contacts](#contacts)
 
-# site has function nav bar to webpage content as well as link to resume. "my work" article section has image button of previous websites with attached links that will bring you to those webpages.
+## Description 
+A professional portfolio webpage displaying top 3 github repository web aplications created and designed by myself and teams I worked with.
 
-# hovering over buttons will change cursor to 'pointer' and makes button 'pulse' a variable background color
-
-# css uses :root element settings that are then called throughout css page
-
+## Webpage Image
 ![portfolio1](https://user-images.githubusercontent.com/129554518/236910568-51bb3a33-1004-4080-a970-0812093d6b2b.PNG)
 
-#sources: I created the code referencing previous work from my bootcamp course as well as class' activities. 
+© 2023 Ceres Markley. All Rights Reserved.
